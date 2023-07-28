@@ -36,21 +36,23 @@
             letter-spacing: 3px;
             align-items: center;
             height: 100%;
+            text-decoration: none;
             .navlink {
                 font-weight: 300;
-                text-decoration: none;
                 color: $white;
                 opacity: 0.9;
                 font-size: 16px;
-                height: 100%;
-                padding-top: 2.5rem;
             }
-            .active {
-                    border-bottom: 2px solid $white;
-                }
+            
             span {
                 font-size: 18px;
             }
         }
+        .menu-item:hover {
+            border-bottom: 3px solid rgb(255,255,255, 0.5);
+        }
+        .active {
+            border-bottom: 3px solid $white;
+            }
     }
 }

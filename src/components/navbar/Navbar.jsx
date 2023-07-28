@@ -34,10 +34,10 @@ const Navbar = () => {
         <hr className='navbar-line'/>
         <div className='navbar-menu'>
             {menu.map((item, index) => (
-                <div key={index} className='menu-item'>
+                <NavLink to={item.link} key={index} className='menu-item'>
                     <span>{item.number}</span>
-                    <NavLink className="navlink" to={item.link}>{item.name}</NavLink>
-                </div>
+                    <p className="navlink" >{item.name}</p>
+                </NavLink>
             ))}
         </div>
     </nav>

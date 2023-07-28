@@ -1,7 +1,13 @@
 import React from 'react'
 import './homeComponent.scss'
+import { useNavigate } from 'react-router-dom'
 
 function HomeComponent() {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('destination')
+  }
   return (
     <div className='container'>
           <section className='introduction'>
@@ -11,7 +17,7 @@ function HomeComponent() {
           </section>
         
           <section className='container__button'>
-            <button className='container__btn--explore'> EXPLORE </button>
+            <button className='container__btn--explore' onClick={handleClick}> EXPLORE </button>
           </section>
         </div>
   )
