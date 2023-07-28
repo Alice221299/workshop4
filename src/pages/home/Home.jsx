@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./home.scss"
 import imageDesktopHome from "../../assets/home/background-home-desktop.jpg"
 import imageDesktopDestination from "/images/destination/background-destination-desktop.jpg"
+import imageTabletHome from "../../assets/home/background-home-tablet.jpg"
+import imageTabletDestination from "/images/destination/background-destination-tablet.jpg"
 import imageMobileHome from "../../assets/home/background-home-mobile.jpg"
 import imageMobileDestination from "/images/destination/background-destination-mobile.jpg"
 import Navbar from '../../components/navbar/Navbar'
@@ -21,7 +23,16 @@ const Home = () => {
       else if (location.pathname === "/destination"){
         setBackground(imageDesktopDestination)
       }
-    }else {
+    }
+    else if (width < 900 && width >= 600) {
+      if (location.pathname === "/") {
+        setBackground(imageTabletHome)
+      }
+      else if (location.pathname === "/destination"){
+        setBackground(imageTabletDestination)
+      }
+    }
+    else {
       if (location.pathname === "/") {
         setBackground(imageMobileHome)
       }
