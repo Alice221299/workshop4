@@ -21,7 +21,9 @@
     }
     .navbar-menu {
         display: flex;
-        padding: 2.5rem 10rem;
+        align-items: center;
+        padding: 0 10rem;
+        height: 6rem;
         background-color: rgb(255,255,255,0.04);
         backdrop-filter: blur(10px);
         gap: 50px;
@@ -33,13 +35,19 @@
             color: $white;
             letter-spacing: 3px;
             align-items: center;
+            height: 100%;
             .navlink {
                 font-weight: 300;
                 text-decoration: none;
                 color: $white;
                 opacity: 0.9;
                 font-size: 16px;
+                height: 100%;
+                padding-top: 2.5rem;
             }
+            .active {
+                    border-bottom: 2px solid $white;
+                }
             span {
                 font-size: 18px;
             }
