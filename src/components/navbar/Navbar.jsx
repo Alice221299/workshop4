@@ -7,19 +7,23 @@ const Navbar = () => {
     const menu = [
         {
             number: "00",
-            name: "Home"
+            name: "Home",
+            link: "/"
         },
         {
             number: "01",
-            name: "Destination"
+            name: "Destination",
+            link: "destination"
         },
         {
             number: "02",
-            name: "Crew"
+            name: "Crew",
+            link: "/"
         },
         {
             number: "03",
-            name: "Technology"
+            name: "Technology",
+            link: "/"
         }
     ]
   return (
@@ -32,7 +36,7 @@ const Navbar = () => {
             {menu.map((item, index) => (
                 <div key={index} className='menu-item'>
                     <span>{item.number}</span>
-                    <NavLink className="navlink" to="/">{item.name}</NavLink>
+                    <NavLink className="navlink" to={item.link}>{item.name}</NavLink>
                 </div>
             ))}
         </div>
