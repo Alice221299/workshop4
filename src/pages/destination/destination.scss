@@ -15,3 +15,23 @@ main {
         }
     }
 }
+
+@media (max-width: 900px) {
+    main {
+        padding:3rem;
+        .destination-title{
+            font-size: 20px;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 2rem 1.5rem;
+        .destination-title{
+            justify-content: center;
+        }
+        
+    }
+}
