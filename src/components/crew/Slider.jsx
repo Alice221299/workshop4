@@ -1,16 +1,16 @@
-import React, { useRef, useState } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './slider.scss';
 import { Pagination } from 'swiper/modules';
-import crewDAta from './data';
-
-const [data, setdata] = useState([])
+import { crewDAta } from '../../service/crewData';
 
 
 
-function Slider () {
+
+function Slider() {
+
   return (
     <>
       <Swiper
@@ -20,18 +20,35 @@ function Slider () {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>dsfffafdsfsdfdsf</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {
+          crewDAta.map((element, index) => (
+
+
+            <SwiperSlide key={index} img={element.images.png}>
+              <div className='container__info'>
+                <div className='container__pag'>
+                  <h2>02</h2>
+                  <h1>MEET YOUR CREW</h1>
+                </div>
+                <h1 className='container__title'>{element.role.toLocaleUpperCase()}</h1>
+                <span>{element.name.toUpperCase()}</span>
+                <p>{element.bio}</p>
+              </div>
+              <figure>
+                <img src={element.images.png} alt="" />
+              </figure>
+
+            </SwiperSlide>
+
+          ))
+
+        }
+
+
       </Swiper>
     </>
   );
 }
 
 export default Slider
+

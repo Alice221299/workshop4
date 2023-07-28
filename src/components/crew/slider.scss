@@ -1,41 +1,148 @@
-#app {
-    height: 100%;
-  }
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .swiper {
-    width: 40%;
-    height: 90vh;
-  }
-  
+@import "../../assets/styles/reset.scss";
+@import "../../assets/styles/variables.scss";
+
+
+.swiper {
+  width: 70%;
+  height: 90vh;
+
   .swiper-slide {
-    text-align: center;
     font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
+    background: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
   }
-  
-  .swiper-slide img {
-    display: block;
+
+  .swiper-pagination-bullet {
+    background-color: aliceblue;
+  }
+
+  .swiper-pagination {
+    bottom: 23%;
+    right: 20px;
+  }
+
+  // .swiper-slide img {
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+
+  // }
+
+  .container__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $white;
+    font-family: $primary-font;
+
+    .container__pag {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 20%;
+      color: $white;
+      font-weight: 100;
+      font-family: $primary-font;
+    }
+
+    .container__title {
+      font-size: 30px;
+      font-weight: 100;
+      font-family: $primary-font;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 3.4rem;
+      margin-bottom: 30px;
+      font-family: $primary-font;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 190px;
+      width: 70%;
+      font-weight: 100;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .swiper {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+    .swiper-slide {
+      flex-direction: column;
+
+      img {
+        position: relative;
+        bottom: 20%;
+
+      }
+    }
+
+    .swiper-pagination {
+      bottom: 41%;
+    }
   }
-  
+
+  .container__info {
+    text-align: center;
+    align-items: center;
+
+    .container__pag {
+      position: absolute;
+      top: 0;
+      left: 5%;
+      margin: 0;
+    }
+
+  }
+}
+
+@media (max-width: 615px) {
+  .swiper {
+    width: 100%;
+
+    .swiper-pagination {
+      bottom: 61%;
+    }
+
+    .swiper-slide {
+      flex-direction: column-reverse;
+    }
+
+    .container__info {
+      .container__pag {
+        font-size: 14px;
+
+        left: 30%;
+      }
+
+      font-size: 1.3;
+
+      p {
+        margin: 0;
+      }
+
+      .container__title {
+        font-size: 1rem;
+      }
+
+      span {
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 19px;
+        width: 95%;
+      }
+    }
+
+  }
+}
