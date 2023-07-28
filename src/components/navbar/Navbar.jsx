@@ -26,7 +26,7 @@ const Navbar = () => {
         {
             number: "03",
             name: "Technology",
-            link: "/"
+            link: "technology"
         }
     ]
   return (
