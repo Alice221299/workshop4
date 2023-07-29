@@ -16,9 +16,12 @@ function Slider() {
       <Swiper
         pagination={{
           dynamicBullets: true,
+          clickable: true 
         }}
+        
         modules={[Pagination]}
         className="mySwiper"
+
       >
         {
           crewDAta.map((element, index) => (
