@@ -1,9 +1,14 @@
+import Douglas from '../assets/crew/image-douglas-hurley.png'
+import Mark from '../assets/crew/image-mark-shuttleworth.png'
+import Victor from '../assets/crew/image-victor-glover.png'
+import Ansari from '../assets/crew/image-anousheh-ansari.png'
+
 
 export const crewDAta = [
     {
       name: "Douglas Hurley",
       images: {
-        png: "./assets/crew/image-anousheh-ansari.png",
+        png: Douglas,
         webp: "./assets/crew/image-douglas-hurley.webp"
       },
       role: "Commander",
@@ -12,7 +17,7 @@ export const crewDAta = [
     {
       name: "Mark Shuttleworth",
       images: {
-        png: "/assets/crew/image-mark-shuttleworth.png",
+        png: Mark,
         webp: "./assets/crew/image-mark-shuttleworth.webp"
       },
       role: "Mission Specialist",
@@ -21,7 +26,7 @@ export const crewDAta = [
     {
       name: "Victor Glover",
       images: {
-        png: "./assets/crew/image-victor-glover.png",
+        png: Victor,
         webp: "./assets/crew/image-victor-glover.webp"
       },
       role: "Pilot",
@@ -30,7 +35,7 @@ export const crewDAta = [
     {
       name: "Anousheh Ansari",
       images: {
-        png: "/assets/crew/image-anousheh-ansari.png",
+        png: Ansari,
         webp: "./assets/crew/image-anousheh-ansari.webp"
       },
       role: "Flight Engineer",
