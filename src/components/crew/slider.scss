@@ -1,4 +1,4 @@
-@import "../../assets/styles/reset.scss";
+
 @import "../../assets/styles/variables.scss";
 
 .container__pag {
@@ -92,7 +92,7 @@
     .swiper-slide {
       flex-direction: column;
 
-      img {
+      .crew-picture {
         position: relative;
         left: 50px;
         margin-top: 0;
@@ -132,7 +132,7 @@
 
     .swiper-slide {
       flex-direction: column-reverse;
-      img {
+      .crew-picture {
         border-bottom: 1px solid white;
         margin-right: 60px;
         height: 26rem;

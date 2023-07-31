@@ -25,7 +25,7 @@ function Slider() {
               <span>{element.name.toUpperCase()}</span>
               <p>{element.bio}</p>
             </div>
-            <img src={element.images.png} alt="Imagenes integrantes" />
+            <img className='crew-picture' src={element.images.png} alt="Imagenes integrantes" />
           </SwiperSlide>
         ))
       }

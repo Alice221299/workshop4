@@ -23,12 +23,13 @@ const DestinationPlanet = () => {
     <>
       <Swiper ref={swiperRef}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper "
+        id='swiper-destination'
         onSlideChange={(swiper) => handleBulletClick(swiper.activeIndex)}>
         {destinations.map((planet, index) => (
             <SwiperSlide key={index}>
                 <figure className='slide-planet'>
-                    <img src={planet.images.png} alt={planet.name} />
+                    <img className='planet-image' src={planet.images.png} alt={planet.name} />
                 </figure>
                 <div className='planet-info'>
                 <div className="custom-bullets">

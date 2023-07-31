@@ -6,29 +6,30 @@ import Slider from './slider'
 import './slider.scss'
 import useScreenSize from "./screen";
 
-const ImageChanger = () => {
-  const { width } = useScreenSize();
-  const [imageUrl, setImageUrl] = useState("");
+// const ImageChanger = () => {
+//   const { width } = useScreenSize();
+//   const [imageUrl, setImageUrl] = useState("");
 
-  useEffect(() => {
-    if (width > 950) {
-      setImageUrl(imageDesktop1);
-    } else if (width < 615) {
-      setImageUrl(imageMobile);
-    } else {
-      setImageUrl(imageTablet);
-    }
-  }, [width]);
+//   useEffect(() => {
+//     if (width > 950) {
+//       setImageUrl(imageDesktop1);
+//     } else if (width < 615) {
+//       setImageUrl(imageMobile);
+//     } else {
+//       setImageUrl(imageTablet);
+//     }
+//   }, [width]);
 
-  return imageUrl;
-};
+//   return imageUrl;
+// };
+// style={{ backgroundImage: `url(${imageUrl})` }}
 
 const Crew = () => {
-  const imageUrl = ImageChanger();
+  // const imageUrl = ImageChanger();
 
   return (
     <>
-    <section className='backImage' style={{ backgroundImage: `url(${imageUrl})` }}>
+    <section className='backImage' >
       <div className='container__pag'>
         <h2>02</h2>
         <h1>MEET YOUR CREW</h1>

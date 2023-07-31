@@ -9,6 +9,9 @@ import imageTabletTechnology from "../../assets/technology/background-technology
 import imageMobileHome from "../../assets/home/background-home-mobile.jpg"
 import imageMobileDestination from "/images/destination/background-destination-mobile.jpg"
 import imageMobileTechnology from "../../assets/technology/background-technology-mobile.jpg"
+import imageDesktopCrew from "../../assets/crew/background-crew-desktop.jpg"
+import imageTabletCrew from "../../assets/crew/background-crew-tablet.jpg"
+import imageMobileCrew from "../../assets/crew/background-crew-mobile.jpg"
 import Navbar from '../../components/navbar/Navbar'
 import { Outlet, useLocation } from 'react-router-dom'
 import useScreenSize from '../../hooks/useScreenSize'
@@ -29,6 +32,9 @@ const Home = () => {
       else if (location.pathname === "/technology"){
         setBackground(imageDesktopTechnology)
       }
+      else if (location.pathname === "/crew"){
+        setBackground(imageDesktopCrew)
+      }
     }
     else if (width < 900 && width >= 600) {
       if (location.pathname === "/") {
@@ -40,6 +46,9 @@ const Home = () => {
       else if (location.pathname === "/technology"){
         setBackground(imageTabletTechnology)
       }
+      else if (location.pathname === "/crew"){
+        setBackground(imageTabletCrew)
+      }
     }
     else {
       if (location.pathname === "/") {
@@ -50,6 +59,9 @@ const Home = () => {
       }
       else if (location.pathname === "/technology"){
         setBackground(imageMobileTechnology)
+      }
+      else if (location.pathname === "/crew"){
+        setBackground(imageMobileCrew)
       }
     }
 
