@@ -28,9 +28,16 @@ function Technology() {
     setView(true)
   };
 
-
- 
-
+  const getStyle = (target) => {
+    const stateButton = document.querySelectorAll(".content__button__id")
+    stateButton.forEach((item)=>{
+      item.classList.add("noActiveButton")
+    })
+    target.classList.remove("noActiveButton")
+    target.classList.add("activeButton")
+  }
+    
+  
   return (
     <section className="pages">
       <div className="technology__title">
@@ -43,11 +50,11 @@ function Technology() {
         <div className="technology__content">
           <div className="content__button">
             {data.map((items, index) => (
-              <button
-                onClick={() => {
-                  handleClick(items);
-                }}
-                className="content__button__id"
+              <button 
+                onClick={(e) => {
+                  handleClick(items); getStyle(e.target)
+                }} 
+                className="content__button__id noActiveButton"
                 key={index}
               >
                 {items.id}
