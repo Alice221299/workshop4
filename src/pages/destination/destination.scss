@@ -1,0 +1,37 @@
+@import "../../assets/styles/variables.scss";
+
+main {
+    padding: 0 10rem;
+    .destination-title {
+        color: $white;
+        font-size: 28px;
+        display: flex;
+        gap: 10px;
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        letter-spacing: 3px;
+        span {
+            opacity: 60%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        padding:3rem;
+        .destination-title{
+            font-size: 20px;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 2rem 1.5rem;
+        .destination-title{
+            justify-content: center;
+        }
+        
+    }
+}

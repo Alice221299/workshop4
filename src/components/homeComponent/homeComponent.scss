@@ -13,7 +13,7 @@
         justify-content: center;
         color: $white;
         margin-left: 10rem;
-        margin-bottom: 10%;
+        margin-bottom: 8%;
         .introduction__span{
             font-size: 28px;
             font-family: $secondary-font; 
@@ -28,11 +28,12 @@
         }       
         .introduction__par{
             font-size: 20px;
-            width: 68% ;
+            width: 78% ;
             font-family: $secondary-font; 
             color: $light-blue;
             line-height: 2rem;
             letter-spacing: 2px; 
+            font-weight: lighter;
         }
     }
     .container__button{
@@ -50,5 +51,140 @@
             font-family: $primary-font;
             letter-spacing: 3px; 
         }
+        .container__btn--explore:hover {
+            box-shadow: 0px 0px 0px 80px rgba(255,255,255,0.1);
+        }
     }
 }
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .container{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5rem;
+        margin-top: 2rem;
+    
+        .introduction{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; 
+            justify-content: center;
+            color: $white;
+            margin-left: 0;
+            margin-bottom: 0;
+            .introduction__span{
+                font-size: 20px;
+                font-family: $secondary-font; 
+                color: $light-blue;
+                letter-spacing: 2px; 
+    
+            }
+            .introduction__title{
+                font-size: 120px;
+                font-weight: 200;
+                font-family: $primary-font;
+            }       
+            .introduction__par{
+                font-size: 15px;
+                width: 100% ;
+                font-weight: lighter;
+                font-family: $secondary-font; 
+                color: $light-blue;
+                line-height: 2rem;
+                letter-spacing: 2px; 
+            }
+        }
+        .container__button{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4rem;
+            .container__btn--explore{
+                border-radius: 50%;
+                width: 11rem;
+                height: 11rem;
+                border: none;
+                font-size: 20px;
+                padding: 1rem;
+                font-family: $primary-font;
+                letter-spacing: 3px; 
+            }
+            .container__btn--explore:hover {
+                box-shadow: 0px 0px 0px 80px rgba(255,255,255,0.1);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .container{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8rem;
+        margin-top: 2rem;
+    
+        .introduction{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; 
+            justify-content: center;
+            color: $white;
+            margin-top: 2rem;
+            margin-left: 0;
+            margin-bottom: 0;
+            .introduction__span{
+                font-size: 20px;
+                font-family: $secondary-font; 
+                color: $light-blue;
+                letter-spacing: 2px; 
+    
+            }
+            .introduction__title{
+                font-size: 140px;
+                font-weight: 200;
+                font-family: $primary-font;
+            }       
+            .introduction__par{
+                font-size: 15px;
+                width: 100% ;
+                font-weight: lighter;
+                font-family: $secondary-font; 
+                color: $light-blue;
+                line-height: 2rem;
+                letter-spacing: 2px; 
+            }
+        }
+        .container__button{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+            .container__btn--explore{
+                border-radius: 50%;
+                width: 10rem;
+                height: 10rem;
+                border: none;
+                font-size: 20px;
+                padding: 1rem;
+                font-family: $primary-font;
+                letter-spacing: 3px; 
+            }
+            .container__btn--explore:hover {
+                box-shadow: 0px 0px 0px 80px rgba(255,255,255,0.1);
+            }
+        }
+    }
+
+}
+
