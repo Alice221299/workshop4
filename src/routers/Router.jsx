@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '../pages/home/Home'
 import HomeComponent from '../components/homeComponent/homeComponent'
 import Destination from '../pages/destination/Destination'
+import Technology from '../pages/technology/technology'
+import Crew from '../components/crew/Crew'
 
 const Router = () => {
   return (
@@ -11,6 +13,8 @@ const Router = () => {
             <Route path='/' element={<Home/>}>
                 <Route index element={<HomeComponent/>}/>
                 <Route path='destination' element={<Destination/>}/>
+                <Route path='technology' element={<Technology />}/>
+                <Route path='crew' element={<Crew/>}/>
             </Route>
         </Routes>
     </BrowserRouter>

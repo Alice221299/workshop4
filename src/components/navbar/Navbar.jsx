@@ -21,12 +21,12 @@ const Navbar = () => {
         {
             number: "02",
             name: "Crew",
-            link: "/"
+            link: "crew"
         },
         {
             number: "03",
             name: "Technology",
-            link: "/"
+            link: "technology"
         }
     ]
   return (

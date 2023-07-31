@@ -1,0 +1,404 @@
+@import "../../assets/styles/variables.scss";
+
+.activeButton {
+    background-color: white;
+    color: black;
+}
+
+.noActiveButton {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.technology {
+    color: antiquewhite;
+    display: flex;
+    margin-left: 9rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    width: 85%;
+    justify-content: space-between;
+
+    &__title {
+        display: flex;
+        gap: 1rem;
+        font-family: $secondary-font;
+        letter-spacing: 4px;
+        margin-left: 9rem;
+        font-size: 17px;
+
+        &__span {
+            color: rgb(107, 107, 107);
+            font-weight: bolder;
+
+        }
+
+        &__title {
+            font-weight: lighter;
+            color: white;
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
+.content__button {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__id {
+        border: 0.2px solid rgb(62, 60, 60);
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        font-size: 20px;
+        font-family: Times, serif;
+        cursor: pointer;
+    }
+
+    &__id:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+.content__data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 70%;
+
+    &__span {
+        font-family: $secondary-font;
+        letter-spacing: 3px;
+        font-weight: lighter;
+        color: $light-blue;
+        font-size: 14px;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-size: 45px;
+        font-weight: lighter;
+        letter-spacing: 4px;
+        width: 100%;
+        transition: top 0.5s ease-out;
+
+    }
+
+    &__parrafo {
+        margin-top: 0.8rem;
+        width: 88%;
+        font-family: $secondary-font;
+        letter-spacing: 2px;
+        line-height: 23px;
+        font-size: 15px;
+        font-weight: lighter;
+        color: $light-blue;
+    }
+}
+
+.image {
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    &__figure {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    &__img__portrait {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 4rem;
+        left: 3.5rem;
+    }
+
+    &__img__landscape {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-between;
+
+    }
+
+    .technology {
+        color: antiquewhite;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 1rem;
+        gap: 3rem;
+        width: 100%;
+
+        &__title {
+            display: flex;
+            gap: 1rem;
+            font-family: $secondary-font;
+            letter-spacing: 4px;
+            margin-left: 2rem;
+
+            &__span {
+                color: rgb(107, 107, 107);
+                font-weight: bolder
+            }
+
+            &__title {
+                font-weight: lighter;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            width: 100%;
+        }
+    }
+
+    .content__button {
+        display: block;
+
+        &__id {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 0.2px solid rgb(62, 60, 60);
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            font-size: 20px;
+            font-family: Times, serif;
+            margin-right: 1rem;
+        }
+
+        &__id:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .content__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 75%;
+        margin-bottom: 3rem;
+
+        &__span {
+            font-family: $secondary-font;
+            letter-spacing: 3px;
+            font-weight: lighter;
+            color: $light-blue;
+            font-size: 13px;
+        }
+
+        &__title {
+            font-family: $primary-font;
+            font-size: 36px;
+            font-weight: lighter;
+            letter-spacing: 4px;
+            width: 100%;
+            transition: top 0.5s ease-out;
+            text-align: center;
+
+        }
+
+        &__parrafo {
+            margin-top: 0.8rem;
+            width: 80%;
+            font-family: $secondary-font;
+            letter-spacing: 2px;
+            line-height: 21px;
+            font-size: 14px;
+            font-weight: lighter;
+            color: $light-blue;
+            text-align: center;
+        }
+    }
+
+    .image {
+        margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        &__figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        &__img__portrait {
+            display: none;
+        }
+
+        &__img__landscape {
+            display: block;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 520px) {
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .technology {
+        color: antiquewhite;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 1rem;
+        gap: 3rem;
+        width: 100%;
+
+        &__title {
+            display: flex;
+            gap: 1rem;
+            font-family: $secondary-font;
+            letter-spacing: 4px;
+            margin-left: 0;
+
+            &__span {
+                color: rgb(107, 107, 107);
+                font-weight: bolder
+            }
+
+            &__title {
+                font-weight: lighter;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            width: 100%;
+        }
+    }
+
+    .content__button {
+        display: block;
+
+        &__id {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 0.2px solid rgb(62, 60, 60);
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            font-size: 20px;
+            font-family: Times, serif;
+            margin-right: 1rem;
+        }
+
+        &__id:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .content__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 75%;
+        margin-bottom: 3rem;
+        width: 90%;
+
+        &__span {
+            font-family: $secondary-font;
+            letter-spacing: 3px;
+            font-weight: lighter;
+            color: $light-blue;
+            font-size: 16px;
+        }
+
+        &__title {
+            font-family: $primary-font;
+            font-size: 36px;
+            font-weight: lighter;
+            letter-spacing: 4px;
+            width: 100%;
+            transition: top 0.5s ease-out;
+            text-align: center;
+
+        }
+
+        &__parrafo {
+            margin-top: 0.8rem;
+            width: 100%;
+            font-family: $secondary-font;
+            letter-spacing: 2px;
+            line-height: 21px;
+            font-size: 15px;
+            font-weight: lighter;
+            color: $light-blue;
+            text-align: center;
+        }
+    }
+
+    .image {
+        margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        &__figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        &__img__portrait {
+            display: none;
+        }
+
+        &__img__landscape {
+            display: block;
+            bottom: 0;
+            width: 520px;
+
+        }
+    }
+
+
+
+}
