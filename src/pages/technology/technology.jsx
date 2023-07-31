@@ -33,12 +33,13 @@ function Technology() {
 
   return (
     <section className="pages">
-      <section className="technology">
-        <div className="technology__title">
+      <div className="technology__title">
           <span className="technology__title__span">03</span>
           <h3 className="technology__title__title">SPACE LAUNCH 101</h3>
         </div>
 
+      <section className="technology">
+        
         <div className="technology__content">
           <div className="content__button">
             {data.map((items, index) => (
@@ -63,12 +64,15 @@ function Technology() {
             
           </div>
         </div>
-      </section>
 
-      <section className="image">
+
+        <div className="image">
         <figure className="image__figure">
-          <img className="image__img" src={techData.portrait} alt="img" />
+          <img className="image__img__portrait" src={techData.portrait} alt="img" />
+          <img className="image__img__landscape" src={techData.landscape} alt="img" />
         </figure>
+      </div>
+
       </section>
     </section>
   );
