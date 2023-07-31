@@ -136,6 +136,16 @@
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
+    .activeButton {
+        background-color: white;
+        color: black;
+    }
+    
+    .noActiveButton {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+    }
+
     .pages {
         display: flex;
         flex-direction: column;
@@ -160,6 +170,7 @@
             font-family: $secondary-font;
             letter-spacing: 4px;
             margin-left: 2rem;
+            margin-top: 3rem;
 
             &__span {
                 color: rgb(107, 107, 107);
@@ -184,8 +195,7 @@
         display: block;
 
         &__id {
-            background-color: rgb(0, 0, 0);
-            color: white;
+            
             border: 0.2px solid rgb(62, 60, 60);
             border-radius: 50%;
             width: 55px;
@@ -269,6 +279,16 @@
 
 
 @media (max-width: 520px) {
+    .activeButton {
+        background-color: white;
+        color: black;
+    }
+    
+    .noActiveButton {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+    }
+
     .pages {
         display: flex;
         flex-direction: column;
@@ -293,6 +313,7 @@
             font-family: $secondary-font;
             letter-spacing: 4px;
             margin-left: 0;
+            margin-top: 3rem;
 
             &__span {
                 color: rgb(107, 107, 107);
@@ -317,8 +338,6 @@
         display: block;
 
         &__id {
-            background-color: rgb(0, 0, 0);
-            color: white;
             border: 0.2px solid rgb(62, 60, 60);
             border-radius: 50%;
             width: 55px;
@@ -394,7 +413,7 @@
         &__img__landscape {
             display: block;
             bottom: 0;
-            width: 520px;
+            width: 100%;
 
         }
     }
