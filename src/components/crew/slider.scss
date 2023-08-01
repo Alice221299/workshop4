@@ -86,11 +86,12 @@
 
 @media (max-width: 900px) {
   .container__pag {
-    top: 0;
-    left: 5%;
+    top: 25%;
+    left: 2%;
     margin: 0;
     margin-left: 5%;
-    font-size: 13px
+    font-size: 13px;
+    position: absolute;
     h2{
       opacity: 50%;
     }
@@ -106,14 +107,14 @@
         position: relative;
         left: 37px;
         margin-top: 0;
-        height: 24rem;
-        width: 21rem;
-        top: 8%;
+        height: 17rem;
+        width: 19rem;
+        top: 13%;
       }
     }
 
     .swiper-pagination {
-      bottom: 62%;
+      bottom: 51%;
       margin-left: -1px;
     }
     .container__info {
@@ -151,7 +152,7 @@
     height: 100vh;
 
     .swiper-pagination {
-      bottom: 32.7%;
+      bottom: 39.7%;
     }
 
     .swiper-slide {
@@ -159,9 +160,9 @@
       .crew-picture {
         border-bottom: 1px solid white;
         margin-right: 60px;
-        height: 24rem;
-        width: 21rem;
-        top: -10px;
+        height: 19rem;
+        width: 18rem;
+        top: -33px;
       }
     }
 
