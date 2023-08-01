@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import imageDesktop1 from "../../assets/crew/background-crew-desktop.jpg"
 import imageMobile from "../../assets/crew/background-crew-mobile.jpg"
 import imageTablet from "../../assets/crew/background-crew-tablet.jpg"
-import Slider from './slider'
+import Slider from './Slider'
 import './slider.scss'
 import useScreenSize from "./screen";
 
