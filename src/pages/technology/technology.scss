@@ -1,11 +1,21 @@
 @import "../../assets/styles/variables.scss";
 
+.activeButton {
+    background-color: white;
+    color: black;
+}
+
+.noActiveButton {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
 
 .pages {
     display: flex;
     flex-direction: column;
     gap: 4rem;
     justify-content: space-between;
+    padding-bottom: 3.5rem;
 }
 
 .technology {
@@ -13,7 +23,7 @@
     display: flex;
     margin-left: 9rem;
     margin-top: 1rem;
-    gap: 5rem;
+    gap: 1rem;
     width: 85%;
     justify-content: space-between;
 
@@ -27,8 +37,8 @@
 
         &__span {
             color: rgb(107, 107, 107);
-            font-weight: bolder; 
-            
+            font-weight: bolder;
+
         }
 
         &__title {
@@ -49,14 +59,13 @@
     gap: 1rem;
 
     &__id {
-        background-color: rgb(0, 0, 0);
-        color: white;
         border: 0.2px solid rgb(62, 60, 60);
         border-radius: 50%;
         width: 65px;
         height: 65px;
         font-size: 20px;
         font-family: Times, serif;
+        cursor: pointer;
     }
 
     &__id:hover {
@@ -103,26 +112,46 @@
 
 .image {
     margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 
-    &__img__portrait {
-        width: 27rem;
-        height: 24rem;
-        position: relative;
-        bottom: 4rem;
+    &__figure {
+        width: 100%;
+        height: 100%;
+        margin: 0;
     }
 
-    &__img__landscape{
+    &__img__portrait {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 4rem;
+        left: 3.5rem;
+    }
+
+    &__img__landscape {
         display: none;
     }
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
+    .activeButton {
+        background-color: white;
+        color: black;
+    }
+    
+    .noActiveButton {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+    }
+
     .pages {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         justify-content: space-between;
-        
+
     }
 
     .technology {
@@ -132,7 +161,7 @@
         align-items: center;
         margin-left: 0;
         margin-top: 1rem;
-        gap: 370px;
+        gap: 3rem;
         width: 100%;
 
         &__title {
@@ -141,6 +170,7 @@
             font-family: $secondary-font;
             letter-spacing: 4px;
             margin-left: 2rem;
+            margin-top: 3rem;
 
             &__span {
                 color: rgb(107, 107, 107);
@@ -163,10 +193,9 @@
 
     .content__button {
         display: block;
-        
+
         &__id {
-            background-color: rgb(0, 0, 0);
-            color: white;
+            
             border: 0.2px solid rgb(62, 60, 60);
             border-radius: 50%;
             width: 55px;
@@ -223,29 +252,43 @@
     }
 
     .image {
-        height: 2px;
         margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
 
-        &__figure{
-            height: 2px;
+        &__figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
         }
 
-        &__img__portrait{
+        &__img__portrait {
             display: none;
         }
 
-        &__img__landscape{
+        &__img__landscape {
             display: block;
+            width: 100%;
             bottom: 0;
-
-        
         }
     }
+
 
 }
 
 
 @media (max-width: 520px) {
+    .activeButton {
+        background-color: white;
+        color: black;
+    }
+    
+    .noActiveButton {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+    }
+
     .pages {
         display: flex;
         flex-direction: column;
@@ -261,7 +304,7 @@
         align-items: center;
         margin-left: 0;
         margin-top: 1rem;
-        gap: 250px;
+        gap: 3rem;
         width: 100%;
 
         &__title {
@@ -270,6 +313,7 @@
             font-family: $secondary-font;
             letter-spacing: 4px;
             margin-left: 0;
+            margin-top: 3rem;
 
             &__span {
                 color: rgb(107, 107, 107);
@@ -292,10 +336,8 @@
 
     .content__button {
         display: block;
-        
+
         &__id {
-            background-color: rgb(0, 0, 0);
-            color: white;
             border: 0.2px solid rgb(62, 60, 60);
             border-radius: 50%;
             width: 55px;
@@ -353,23 +395,29 @@
     }
 
     .image {
-        height: 2px;
         margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
 
-        &__figure{
-            height: 2px;
+        &__figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
         }
 
-        &__img__portrait{
+        &__img__portrait {
             display: none;
         }
 
-        &__img__landscape{
+        &__img__landscape {
             display: block;
             bottom: 0;
-            width: 520px;
-        
+            width: 100%;
+
         }
     }
+
+
 
 }
