@@ -8,13 +8,11 @@
   color: $white;
   font-weight: 100;
   font-family: $primary-font;
-  position: absolute;
-  top: 9%;
-  left: 18%;
+  margin-left: 13%;
 }
 .swiper {
-  width: 80%;
-  height: 100vh;
+  width: 90%;
+  height: 66vh;
 
   .swiper-slide {
     font-size: 18px;
@@ -42,7 +40,7 @@
     display: block;
     width: 23rem;
     height: 30rem;
-    top: 84px;
+    top: 20px;
     position: relative;
     right: 20px;
   }
@@ -79,30 +77,31 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .container__pag {
-    position: absolute;
     top: 0;
     left: 5%;
     margin: 0;
   }
   .swiper {
     width: 100%;
+    height: 80vh;
 
     .swiper-slide {
       flex-direction: column;
 
       .crew-picture {
         position: relative;
-        left: 50px;
+        left: 37px;
         margin-top: 0;
-        height: 31rem;
+        height: 24rem;
         width: 21rem;
+        top: 6%;
       }
     }
 
     .swiper-pagination {
-      bottom: 56%;
+      bottom: 62%;
       margin-left: -1px;
     }
     .container__info {
@@ -113,21 +112,28 @@
 
       p {
         margin-bottom: 0;
+        font-size: 19px;
+      }
+      span{
+        font-size: 24px;
+        margin-bottom: 0;
       }
     }
   }
 }
 
-@media (max-width: 615px) {
+@media (max-width: 651px) {
   .container__pag {
-    top: 0;
-    left: 25%;
+    top: 12%;
+    left: 21%;
+    position: absolute;
   }
   .swiper {
     width: 100%;
+    height: 100vh;
 
     .swiper-pagination {
-      bottom: 36.5%;
+      bottom: 31.7%;
     }
 
     .swiper-slide {
@@ -135,7 +141,7 @@
       .crew-picture {
         border-bottom: 1px solid white;
         margin-right: 60px;
-        height: 26rem;
+        height: 24rem;
         width: 21rem;
         top: 0;
       }
