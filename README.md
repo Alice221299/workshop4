@@ -1,23 +1,53 @@
-# Spacetravel
+# Bienvenidos a Spacetravel
 
-Workshop 2 Sprint 2 Entrenamiento Front-End
-Objetivo: Construir en equipos el sitio web Space tourism implementando, React 
-JS, SASS y Git Flow.
-1. Trabajar colaborativamente basándose en la estrategia de branching Git 
-Flow:
-a. Crear e inicializar un repositorio local y remoto,
-b. Configurar el colaborador del proyecto en Collaborators en GitHub,
-c. Crear las ramas o branches (indispensable conservar las ramas main y 
-develop),
-d. Realizar Pull Request,
-e. Realizar merge,
-f. Resolver conflictos, y
-g. Integrar todos los cambios en la rama main.
-2. Emplear la librería React js (componentes funcionales)
-3. Usar cualquier framework CSS de preferencia para aplicar estilos y diseño 
-responsive
-4. Emplear Hooks de React (useState y useEffect si aplica) y hooks de React 
-Router DOM (por ejemplo: useParams, para implementar rutas dinámicas).
-5. Emplear components de React Router DOM (BrowserRouter, Routes, Route, 
-Outlet, etc)
-6. Desplegar la página con GitHub pages o verce
+
+
+## Descripción
+
+Plataforma web sobre el turismo espacial hecha utilizando GitFlow.
+
+## Instalación
+
+Siga estos pasos para instalar y ejecutar el proyecto en su entorno de desarrollo local:
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/Alice221299/workshop4.git
+```
+2. Navegar al directorio del proyecto.:
+```bash
+cd workshop4
+```
+3. Instalar las dependencias usando npm:
+```bash
+npm install
+```
+4. Ejecutar el proyecto en modo de desarrollo:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Abra [http://localhost:3000](http://localhost:3000) con su navegador para ver el resultado.
+
+
+## Este proyecto fue desarrollado con:
+
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- ![Sass](https://img.shields.io/badge/-Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+- ![Swiper](https://img.shields.io/badge/-Swiper-764ABC?style=for-the-badge&logo=swiper&logoColor=white)
+
+# Despliegue
+
+[https://workshop4-ten.vercel.app/](https://workshop4-ten.vercel.app/)
+
+# Contacto
+
+Si tiene alguna pregunta, sugerencia o problema relacionado con Spacetravel, no dude en contactarnos.
+
+## Autores
+
+[*Anna Bondarets*](https://github.com/Alice221299), [*Maria Paulina Parra*](https://github.com/MariaPaulinaP), [*Sebastián Barrera*](https://github.com/sebastianbarrerah) 
